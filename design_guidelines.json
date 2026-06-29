@@ -1,0 +1,94 @@
+{
+  "project_name": "Omnius MechAI Landing Page",
+  "theme_archetype": "Archetype 7 (Electric & Neon) combined with Archetype 5 (Luxury). Dark theme premium. Deep obsidian/matte black base to convey luxury and institutional-grade B2B quality, highlighted with electric blue to neon green gradients to signify advanced AI and automation.",
+  "colors": {
+    "background_primary": "#0A0A0A",
+    "background_secondary": "#121212",
+    "surface_glass": "rgba(255, 255, 255, 0.03)",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A1A1AA",
+    "accent_primary": "#00F0FF",
+    "accent_secondary": "#00FF66",
+    "accent_gradient": "bg-gradient-to-r from-[#00F0FF] to-[#00FF66]",
+    "border_default": "rgba(255, 255, 255, 0.1)",
+    "border_glow": "rgba(0, 240, 255, 0.3)"
+  },
+  "typography": {
+    "font_headings": "Outfit, sans-serif",
+    "font_body": "Manrope, sans-serif",
+    "h1": "text-5xl md:text-6xl+ lg:text-7xl font-light tracking-tighter leading-tight",
+    "h2": "text-3xl md:text-4xl lg:text-5xl font-light tracking-tight",
+    "h3": "text-xl md:text-2xl font-medium tracking-tight",
+    "body_large": "text-lg md:text-xl text-[#A1A1AA] leading-relaxed",
+    "body_base": "text-base text-[#A1A1AA] leading-relaxed",
+    "label": "text-xs uppercase tracking-[0.2em] text-[#00F0FF]"
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-24 md:py-32",
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+    "border_radius": "rounded-2xl"
+  },
+  "ui_components": {
+    "buttons": {
+      "primary_whatsapp": "bg-gradient-to-r from-[#00F0FF] to-[#00FF66] text-black font-semibold rounded-full px-8 py-4 hover:scale-105 transition-transform flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(0,240,255,0.4)]",
+      "language_toggle": "flex items-center gap-2 bg-[#121212] border border-white/10 rounded-full p-1 cursor-pointer transition-colors"
+    },
+    "cards": {
+      "feature_card": "relative overflow-hidden bg-[#121212] border border-white/5 rounded-2xl p-8 hover:border-[#00F0FF]/30 transition-colors group",
+      "glass_panel": "backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6"
+    },
+    "icons": "lucide-react with strokeWidth={1.5} for a premium, minimal look."
+  },
+  "media": {
+    "logo": {
+      "url": "https://customer-assets.emergentagent.com/job_9b164edb-d139-47e6-968b-2e5582ac5bf2/artifacts/rl6nv19u_image.png",
+      "alt": "Omnius MechAI Logo",
+      "usage": "Header, Hero centered, Footer"
+    },
+    "abstract_neural_bg": {
+      "url": "https://images.pexels.com/photos/14314636/pexels-photo-14314636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Abstract Neon Neural Network",
+      "usage": "Hero background with heavy black overlay (bg-black/80) to create depth without distracting from text."
+    },
+    "premium_workshop": {
+      "url": "https://images.unsplash.com/photo-1608259243654-70c070e0f6ed?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBhdXRvJTIwcmVwYWlyJTIwd29ya3Nob3AlMjBjbGVhbnxlbnwwfHx8fDE3ODI0NDA5ODR8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Premium Auto Repair Workshop",
+      "usage": "Background for the 'Ascolta Omnius' section or final CTA, extremely darkened (opacity 10-20%)."
+    }
+  },
+  "animations": {
+    "hero": "Framer Motion fade-in up with stagger. Glowing pulse effect on the primary CTA.",
+    "scroll": "Framer Motion whileInView for sections (opacity 0 to 1, y: 20 to 0).",
+    "hover": "Feature cards border glow and slight lift (-translate-y-1). Icon color shifts to neon green on hover."
+  },
+  "page_structure_and_content": {
+    "language_strategy": "Implement a simple React state `const [lang, setLang] = useState('it')`. Store strings in a `content` object with 'it' and 'en' keys.",
+    "nav": "Sticky header with backdrop blur. Logo on left, IT/EN toggle on right.",
+    "sections": [
+      {
+        "id": "hero",
+        "description": "Centered layout. Logo at the top. Massive impactful headline highlighting '24/7' and 'Auto Repair'. Descriptive subhead. Primary WhatsApp CTA: 'Richiedi l'attivazione per la tua officina'. Background features the abstract neural net media URL with a radial dark mask."
+      },
+      {
+        "id": "audio-cases",
+        "title": "Ascolta Omnius (Listen to Omnius)",
+        "description": "2-3 horizontal glassmorphism blocks representing real use cases (e.g., 'Gestione Telefonata in Tempo Reale', 'Fissaggio Appuntamento Autonomo'). Include a mock 'Play' button (lucide-react Play icon) and a visual waveform placeholder. Clean, techy look."
+      },
+      {
+        "id": "features-bento",
+        "title": "Funzionalità (Features)",
+        "description": "Bento grid layout (4-6 blocks). Topics: Gestione Vocale Avanzata, Integrazione Totale (Driver-Agnostic), Conformità Normativa UE (AI Act 2026), Disponibilità 24/7, Apprendimento Continuo, Analisi Dati Officina. Use neon-outlined geometric icons for each. Some blocks span 2 columns or 2 rows for visual tension."
+      },
+      {
+        "id": "final-cta",
+        "description": "Bold, minimalist section. 'Pronto a trasformare la tua officina?'. No forms, no pricing. Massive WhatsApp button for direct contact."
+      },
+      {
+        "id": "footer",
+        "description": "Minimalist. Logo, copyright, 'Privacy Policy', language toggle duplicate."
+      }
+    ],
+    "testing": "Add data-testid attributes to all interactive elements (e.g., data-testid='whatsapp-cta-hero', data-testid='lang-toggle')."
+  }
+}
