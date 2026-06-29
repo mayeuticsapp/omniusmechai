@@ -228,8 +228,7 @@ export const content = {
   },
 };
 
-// Replace with your real number (international format, no + or spaces)
-export const WHATSAPP_NUMBER = "393331234567";
+export const WHATSAPP_NUMBER = "393287439801";
 export const WHATSAPP_LINK = (lang = "it") => {
   const msg =
     lang === "it"
